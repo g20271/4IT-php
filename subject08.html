@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>subject08.php</title>
+</head>
+
+<body>
+    <form name=subject08.php method=POST>
+        姓<input type="text" name="surname">
+        名<input type="text" name="givenName">
+        <br>
+        <input type="radio" name="sex" value="男性">男性
+        <input type="radio" name="sex" value="女性">女性
+        <br>
+        <select name="age">
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+        </select>
+
+        <input type="submit" value="送信">
+    </form>
+<?php include("public_html/info/subject08.php") ?>
+</body>
+
+</html>
