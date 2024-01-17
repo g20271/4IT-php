@@ -1,13 +1,13 @@
 <?php
 try {
     $pdo = new PDO('mysql:host=localhost;dbname=g20271_db;charset=utf8', 'g20271', '2023php-DB');
-    $sql = 'SELECT * from test';
+    $sql = 'SELECT * from gender';
     $rs = $pdo->query($sql);
     echo "<table border='1'>";
     while ($row = $rs->fetch(PDO::FETCH_ASSOC)) {
         echo "<tr>";
-        echo "<td>" . $row['No'] . "</td>";
-        echo "<td>" . $row['name'] . "</td>";
+        echo "<td>" . $row['ID'] . "</td>";
+        echo "<td>" . $row['gender'] . "</td>";
         echo "</tr>\n";
     }
     echo "</table>";
