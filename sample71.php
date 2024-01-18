@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        list($s, $f) = sscanf("03-1111-2222", "%2s-%d-%d");
+        list($n1, $n2, $n3) = sscanf("03-1111-2222", "%2s-%d-%d");
         echo "市外局番:" . $n1 . "<br>\n";
         echo "市内局番:" . $n2 . "<br>\n";
         echo "番号:" . $n3 . "<br>\n";
