@@ -12,7 +12,7 @@ $scores = array(
 echo "<pre>ソート前\n";
 print_r($scores);
 echo "</pre>\n";
-ksort($sort);
+ksort($scores);
 echo"<pre>ソート後";
 print_r($scores);
 echo "</pre>";
