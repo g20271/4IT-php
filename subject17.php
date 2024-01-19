@@ -8,8 +8,9 @@
 <body>
     <?php
     try {
+        $kw = $_POST['key'];
         $pdo = new PDO('mysql:host=localhost;dbname=g20271_db;charset=utf8', 'g20271', '2023php-DB');
-        $sql = 'SELECT * from newbook';
+        $sql = 'SELECT * from newbook where title like "%基礎%"';
         $rs = $pdo->query($sql);
         echo "<table border='1'>";
         echo "<tr>";
